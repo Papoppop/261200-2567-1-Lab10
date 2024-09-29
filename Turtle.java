@@ -55,6 +55,9 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         };
 
         Runnable drawTriangle = () -> {
+            fred.up();
+            fred.setPosition(200, 100);
+            fred.down();
             fred.penColor("green");
             fred.width(2);
             for (int i = 0; i < 3; i++) {
@@ -64,6 +67,9 @@ public class Turtle implements Runnable, ActionListener, MouseListener, MouseMot
         };
 
         Runnable drawCircle = () -> {
+            joe.up();
+            joe.setPosition(100, 100);
+            joe.down();
             joe.penColor("red");
             joe.width(2);
             joe.speed(2);
